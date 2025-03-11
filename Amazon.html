@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Coffee Shop - BI</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/icons8-portfolio-32.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Dark Mode Styles */
+/* Dark Mode Styles */
+.dark-mode {
+  --background-color: #121212; /* Dark background */
+  --default-color: #e0e0e0; /* Light text color */
+  --heading-color: #ffffff; /* White headings */
+  --accent-color: #bb86fc; /* Accent color for links/buttons */
+  --surface-color: #1e1e1e; /* Surface color for cards */
+  --contrast-color: #121212; /* Contrast color for text */
+}
+
+.dark-mode body {
+  background-color: var(--background-color);
+  color: var(--default-color);
+}
+
+.dark-mode a {
+  color: var(--accent-color);
+}
+
+/* Exclude header, footer, and tables from dark mode styles */
+.header,
+.footer {
+  background-color: inherit; /* Inherit the original background */
+  color: inherit; /* Inherit the original text color */
+}
+
+.table-container {
+  background-color: inherit; /* Keep the same background for tables */
+}
+
+table {
+  background-color: inherit; /* Keep the same background for tables */
+  color: #444444; /* Keep the same text color for tables */
+  border: 1px solid #ddd; /* Keep the original border color */
+}
+
+.dark-mode .portfolio-info,
+.dark-mode .portfolio-description,
+.dark-mode .project-details {
+  background-color: var(--surface-color);
+  color: var(--default-color);
+}
+
+.dark-mode h2 {
+    color: rgb(199, 199, 199); /* Set specific heading color */
+}
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Vishal</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          
+          
+          <li class="dropdown"><a href="portfolio.html"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Amazon.html">Amazon_Engagement_Optimization</a></li>
+              
+              <li><a href="portfolio-details.html">Blinkit_Sales_Insight</a></li>
+              <li><a href="Coffee_sales.html">Coffee_Shop_BI</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <img id="dark-mode-toggle" src="https://img.icons8.com/ios-filled/50/do-not-disturb-2.png" alt="Toggle Dark Mode" style="cursor: pointer; width: 30px; height: 30px; transition: transform 0.3s;">
+        <a></a>
+        <a></a>
+        <a></a>
+        <a></a>
+        <a href="https://x.com/hey_vishal08" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/im_visha08/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/vishal-gupta-a790482bb" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Amazon Engagement Optimization Dashboard</h2>
+        <p style="font-size: 20px;"><i>"Where others see numbers, I see possibilities."</i></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper" style="width: 100%; 
+            max-width: 900px; 
+            max-height: 470px; 
+            height: auto; 
+             
+            border-radius: 10px;">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <video width="800" height="470" loop autoplay muted>
+                    <source src="assets/img/portfolio/amazonn.mp4" type="video/mp4">
+                  </video>
+                </div>        
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info portfolio-info-container" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Name</strong>: Amazon Engagement Optimization Dashboard</li>
+                
+                <li><strong>Project Date</strong>: March, 2025</li>
+                
+              </ul>
+            </div>
+            <style>
+              .portfolio-info-container {
+                  background-color: #f0f0f0; /* Light background for light mode */
+                  color: #444444;
+                  padding: 20px;
+                  border-radius: 10px;
+                  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                  margin-bottom: 30px;
+                  border-style: outset;
+              }
+          
+              /* Dark mode styles for portfolio-info */
+              .dark-mode .portfolio-info-container {
+                  background-color: #f0f0f0; /* Dark background for dark mode */
+                  color: #444444; /* Light text color for dark mode */
+              }
+
+              .portfolio-info-container h3,
+    .portfolio-info-container ul,
+    .portfolio-info-container li {
+        color: inherit; /* Inherit color from the container */
+    }
+          </style>
+            
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2 style="text-align: left;">Summary</h2>
+              <p>
+                This project analyzes Amazon's user engagement trends, cart abandonment rates, and conversion performance using 
+                Power BI and data analytics. The insights help in optimizing user retention, improving conversions, and understanding 
+                customer behavior across different traffic sources.<br>
+                <br>By leveraging data-driven strategies, businesses can enhance user experience, increase sales, and refine 
+                marketing efforts for better engagement. 
+            </div>
+          </div>
+          <div class="project-details" data-aos="fade-up" data-aos-delay="400">
+            <hr class="project-details-line"style=" border: none; 
+            height: 2px; 
+            background-color: #34b7a7; 
+            margin: 20px 0; ">
+            
+            <h4><b>Objective</b></h4>
+            <p></p>
+            <ul>
+              <li><b>✔️Track user engagement trends over time </b> to understand how users interact with the platform and identify patterns that drive engagement.</li>
+              <li><b>✔️Analyze factors influencing cart abandonment and conversion rates </b> to uncover key bottlenecks in the purchasing journey and improve checkout completion.</li>
+              <li><b>✔️Evaluate the performance of different devices and traffic sources</b> to determine which channels drive the highest engagement and conversions, enabling better marketing strategy optimization.</li>
+              <li><b>✔️Provide actionable, data-driven recommendations</b> that help Amazon enhance user retention, reduce drop-offs, and maximize overall sales performance.</li>
+              
+            </ul>
+            
+            <hr class="project-details-line"style=" border: none; 
+            height: 2px; 
+            background-color: #34b7a7; 
+            margin: 20px 0; ">
+            <br><h4><b>Tools Used</b></h4>
+            <br>
+            <ul>
+              <li><b>✔️Power BI –</b> Designed and developed interactive dashboards with rich visualizations for better insights and decision-making.</li>
+              <li><b>✔️ DAX (Data Analysis Expressions) –</b> Created custom calculations and measures to analyze key engagement and sales metrics effectively.</li>
+              <li><b>✔️ Excel & SQL – </b> Performed data extraction, cleaning, and transformation to ensure accuracy and consistency in reporting.</li>
+            </ul>
+            
+            
+            <hr class="project-details-line"style=" border: none; 
+              height: 2px; 
+              background-color: #34b7a7; 
+              margin: 20px 0; ">
+            <br><h4><b>Key Insights & Findings (Visuals & Data Storytelling)</b></h4>
+            <p>
+              <h6><i><b>📊 User Engagement Overview</b></i></h6></p>
+            <ul>
+              <li><b>Total Active Users:</b> 1,024,000</li>
+              <li><b>Average Session Duration:</b> 5.4 minutes</li>
+              <li><b>Conversion Rate:</b> 3.2%</li>
+              <li><b>Cart Abandonment Rate:</b> 68%</li>
+            </ul>
+
+            <p>
+              <br><h6><i><b>📊 User Engagement by Device &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📊 Cart Abandonment by Traffic Source</b></i></h6>
+            </p>
+
+            
+
+            <style>
+              .table-container {
+                  display: flex; /* Use flexbox to arrange tables side by side */
+                  justify-content: space-between; /* Space between the tables */
+                  margin-top: 20px; /* Space above the tables */
+              }
+      
+              table {
+                  width: 45%; /* Set width for each table */
+                  margin: 0; /* Remove default margin */
+                  border-collapse: collapse;
+                  background-color: white;
+                  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+              }
+      
+              th, td {
+                  padding: 10px;
+                  border: 1px solid #ddd;
+                  text-align: left;
+                  font-size: 15px;
+              }
+      
+              th {
+                  background-color: #34b7a7;
+                  color: white;
+              }
+      
+              td {
+                  font-weight: bold;
+              }
+            </style>
+            
+            <div class="table-container">
+              <table>
+                <tr>
+                  <th>Device</th>
+                  <th>Users (%)</th>
+                  <th>Conversion Rate (%)</th>
+                </tr>
+                <tr>
+                  <td>📱 Mobile</td>
+                  <td>58%</td>
+                  <td>2.1%</td>
+                </tr>
+                <tr>
+                  <td>💻 Desktop</td>
+                  <td>32%</td>
+                  <td>5.8%</td>
+                </tr>
+                <tr>
+                  <td>📺 Tablet</td>
+                  <td>10%</td>
+                  <td>3.9%</td>
+                </tr>
+                
+              </table>
+
+              
+              
+            
+              <table>
+                <tr>
+                  <th>Traffic Source</th>
+                  <th>Cart Abandonment Rate</th>
+                </tr>
+                <tr>
+                  <td>🔍 Organic Search</td>
+                  <td>61%</td>
+                </tr>
+                <tr>
+                  <td>📱 Social Media</td>
+                  <td>78%</td>
+                </tr>
+                <tr>
+                  <td>📧 Email Marketing</td>
+                  <td>54%</td>
+                </tr>
+                <tr>
+                  <td>🛒 Direct Website Visits</td>
+                  <td>47%</td>
+                </tr>
+                
+              </table>
+            </div>
+          
+            <p>
+              <div style="float:left; width:45%;">
+              <br><h6><i><b>📌 Takeaway: </b></i></h6></div>
+              <div style="float:right; width:45%;">
+              <br><h6><i><b>📌 Takeaway: </b></i></h6></div>
+            </p>
+          
+            <div style="float:left; width:45%;">
+            <ul style="Display:in-line-block;">
+              <li>→ Desktop users have the highest conversion rates → Optimize mobile UI for better conversions. </li>
+              </div>
+            </ul>
+            
+            
+            <div style="float:right; width:45%;">
+            <ul style="Display:in-line-block;">
+              <li>→ Social media has the highest drop-off → Retarget users via email campaigns.</li>
+              </div>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <p>
+              <br><h6><i><b>📊  Funnel Chart – Clicks to Purchases </b></i></h6>
+            </p>
+
+            <div class="table-container">
+              <table>
+                <tr>
+                  <th>Stage</th>
+                  <th>Users Reached</th>
+                  <th>Drop-Off Rate</th>
+                </tr>
+                <tr>
+                  <td>🔘 Clicks</td>
+                  <td>1,000,000</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>🛍️ Added to Cart</td>
+                  <td>450,000</td>
+                  <td>55% drop-off</td>
+                </tr>
+                <tr>
+                  <td>💳 Purchases</td>
+                  <td>144,000</td>
+                  <td>68% drop-off</td>
+                </tr>
+                
+              </table>
+
+              
+              
+            
+              
+            </div>
+          
+            <p>
+              <div style="float:left; width:45%;">
+              <br><h6><i><b>📌 Takeaway: </b></i></h6></div>
+              <br>
+            <br>
+            
+            
+            </p>
+          
+            <div style="float:left; width:45%;">
+            <ul style="Display:in-line-block;">
+              <li>→ Major drop at "Added to Cart" stage → Improve checkout process & offer discounts. </li>
+              </div>
+            </ul>
+            
+            
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+
+            <hr class="project-details-line"style=" border: none; 
+            height: 2px; 
+            background-color: #34b7a7; 
+            margin: 20px 0; ">
+            <h4><br><b>Power BI Dashboard</b></h4>
+            <p>View the interactive report below:</p>
+            <iframe title="amazon" width="1295" height="473.5" src="https://app.powerbi.com/view?r=eyJrIjoiM2MwN2Q0MTQtYjFmOS00YmEyLWIyYWYtZTljNDkwMWY4YzA2IiwidCI6ImI0MWQ5MTc5LWUzN2EtNDY0Zi04Yjg2LThhMmUwYjUxODUyOSJ9" frameborder="0" allowFullScreen="true"></iframe>          <hr class="project-details-line"style=" border: none; 
+            height: 2px; 
+            background-color: #34b7a7; 
+            margin: 20px 0; ">
+            <br><h4><b>Recommendations & Business Impact</b></h4>
+            <br>
+            <ul>
+              <li><b>✅ Optimize Mobile Experience →</b>  Mobile users have high engagement but low conversion. Improve UI/UX & checkout experience.</li>
+              <li><b>✅ Reduce Cart Abandonment →</b> Offer discounts, free shipping, and reminders via email retargeting.</li>
+              <li><b>✅ Improve Social Media Conversions → </b> Target high-abandonment users with retargeting ads & personalized offers.
+              </li>
+              <li><b>✅ Enhance Desktop Performance →</b> Desktop drives the most conversions. Optimize web-based offers & promotions.</li>
+              <li><b>✅ Analyze Peak Engagement Hours →</b> Identify when users are most active and schedule marketing campaigns accordingly.
+
+              </li>
+            </ul>
+            
+
+            <br><hr class="project-details-line"style=" border: none; 
+            height: 2px; 
+            background-color: #34b7a7; 
+            margin: 20px 0; ">
+            <p style="text-align: center;"><i><b>"Mastering data, shaping the future."</i></b></p>
+  
+          </div>
+
+          
+          
+             
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Vishal</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/hey_vishal08"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.instagram.com/im_visha08/"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/vishal-gupta-a790482bb"><i class="bi bi-linkedin"></i></a>
+      </div>
+      
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
